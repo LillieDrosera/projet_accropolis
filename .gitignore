@@ -48,7 +48,7 @@ Temporary Items
 .ftpconfig
 .git
 .gitattributes
-.node_modules
-.Gruntfile.js
-.package.json
+node_modules
+Gruntfile.js
+package.json
 .sass-cache
