@@ -1,4 +1,122 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../font/futura_condensed.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../font/OpenSans-Regular.ttf");
+}
+.container
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: red; }
+  background-color: #e6e6e6;
+}
+body aside,
+body main,
+body section {
+  background-color: #fff;
+  font-family: "OpenSans";
+}
+body .AC-firstmain article {
+  padding-top: 10%;
+  margin-bottom: 7%;
+}
+body .AC-firstmain article h2 {
+  background-color: #e6027d;
+  color: #fff;
+  font-family: "Futura";
+  font-size: 21pt;
+  position: absolute;
+  top: 5%;
+  left: -3%;
+  padding: 0.5% 2%;
+}
+body .AC-firstmain article h3 {
+  background-color: #ff991c;
+  color: #fff;
+  font-family: "Futura";
+  font-size: 21pt;
+  position: absolute;
+  top: 0;
+  right: -3%;
+  padding: 0.5% 2%;
+}
+body .AC-main .AC-bnews {
+  position: relative;
+  height: 17vh;
+}
+body .AC-main .AC-bnews h3 {
+  background-color: #e6027d;
+  color: #fff;
+  font-family: "Futura";
+  font-size: 21pt;
+  position: absolute;
+  top: 1%;
+  left: -3%;
+  padding: 0.5% 2%;
+}
+body .AC-main .AC-bnews p {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+  font-family: "Futura";
+  font-size: 2em;
+}
+body .AC-main .AC-prog {
+  position: relative;
+}
+body .AC-main .AC-prog article {
+  margin-bottom: 7%;
+}
+body .AC-main .AC-prog article h3 {
+  background-color: #e6027d;
+  color: #fff;
+  font-family: "Futura";
+  font-size: 21pt;
+  position: absolute;
+  top: 0;
+  left: -3%;
+  padding: 0.5% 2%;
+}
+body .AC-main .AC-descrip h2 {
+  font-family: "Futura";
+  text-transform: uppercase;
+  margin-bottom: 1%;
+}
+body .AC-main .AC-descrip figure {
+  margin-bottom: 3%;
+}
+body .AC-main .AC-descrip figure p {
+  padding: 1% 0;
+  text-align: justify;
+  font-family: "OpenSans";
+  font-size: 10pt;
+}
+body .AC-rightzone .AC-income h3 {
+  margin-top: 1.7%;
+  margin-left: 40%;
+  font-family: "Futura";
+  font-size: 21pt;
+  width: 50%;
+  padding-left: 2%;
+  border-bottom: 2px solid #e6027d;
+  border-width: medium;
+}
+body .AC-rightzone .AC-income h4 {
+  font-family: "Futura";
+}
+body .AC-rightzone .AC-live a {
+  color: #e6027d;
+  text-decoration: none;
+}
+body .AC-rightzone .AC-replay h4 {
+  font-family: "Futura";
+  color: #e6027d;
+}
 
 /*# sourceMappingURL=style.css.map */

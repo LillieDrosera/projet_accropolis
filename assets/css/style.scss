@@ -1,4 +1,183 @@
-$color: red;
+// Font face //
+@font-face {
+    font-family: "Futura";
+    src: url('../font/futura_condensed.ttf');
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url('../font/OpenSans-Regular.ttf');
+}
+// Couleurs utilisées //
+$action-color: #e6027d;
+$don-color: #ff991c;
+$bg-color: #e6e6e6;
+$bg-section: #fff;
 
-body{
-background:$color;}
+// Font utilisées //
+
+$font-title: "Futura";
+$font-body: "OpenSans";
+$font-color: #fff;
+$font-size-title:21pt;
+$font-size-text:10pt;
+// Reclassement du container
+.container
+// CSS RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// CSS Début
+
+body {
+    background-color: $bg-color;
+
+    aside,
+    main,
+    section {
+        background-color: $bg-section;
+        font-family: $font-body;
+    }
+
+    .AC-firstmain {
+        article {
+            padding-top:10%;
+            margin-bottom: 7%;
+            h2 {
+                // Titre Live ou Rediff
+                background-color: $action-color;
+                color:$font-color;
+
+                font-family: $font-title;
+                font-size: $font-size-title;
+
+
+                position: absolute;
+                top: 5%;
+                left: -3%;
+                padding: 0.5% 2%;
+            }
+
+            h3 {
+                // Titre Je soutiens
+                background-color: $don-color;
+                color:$font-color;
+
+                font-family: $font-title;
+                font-size: $font-size-title;
+
+
+                position: absolute;
+                top: 0;
+                right: -3%;
+
+                padding:0.5% 2%;
+            }
+        }
+    }
+
+    .AC-main {
+        .AC-bnews {
+            position: relative;
+
+            height:17vh;
+            h3 {
+                // Breaking new title
+                background-color: $action-color;
+                color:$font-color;
+
+                font-family: $font-title;
+                font-size: $font-size-title;
+
+
+                position: absolute;
+                top: 1%;
+                left: -3%;
+
+                padding: 0.5% 2%;
+            }
+            p{
+                position:absolute;
+                top:1%;
+                left:20%;
+
+                font-family: $font-title;
+                font-size:2em;
+            }
+        }
+
+        .AC-prog {
+            position: relative;
+            article{
+                // height:5vh;
+                margin-bottom:7%;
+                 h3 {
+                        // Y'a quoi au programme ? titre
+                        background-color: $action-color;
+                        color:$font-color;
+                        font-family: $font-title;
+                        font-size: $font-size-title;
+
+
+                        position: absolute;
+                        top: 0;
+                        left: -3%;
+                        padding: 0.5% 2%;
+                    }
+            }
+        }
+        .AC-descrip{
+            h2{
+                font-family: $font-title;
+                text-transform: uppercase;
+                margin-bottom: 1%;
+            }
+            figure{
+                margin-bottom:3%;
+                p{
+                    padding:1% 0;
+                    text-align: justify;
+                    font-family: $font-body;
+                    font-size:$font-size-text;
+                }
+            }
+        }
+    }
+
+    .AC-rightzone {
+        .AC-income {
+            h3{
+                margin-top: 1.7%;
+                margin-left: 40%;
+
+                font-family:$font-title;
+                font-size:$font-size-title;
+
+                width: 50%;
+                padding-left:2%;
+
+
+                border-bottom: 2px solid $action-color;
+                border-width: medium;
+            }
+            h4 {
+                font-family: $font-title;
+            }
+        }
+
+        .AC-live {
+            a {
+                color: $action-color;
+                text-decoration: none;
+            }
+        }
+
+        .AC-replay {
+            h4 {
+                font-family: $font-title;
+                color: $action-color;
+            }
+        }
+    }
+}
