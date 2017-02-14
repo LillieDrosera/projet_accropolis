@@ -1,122 +1,154 @@
-@font-face {
-  font-family: "Futura";
-  src: url("../font/futura_condensed.ttf");
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url("../font/OpenSans-Regular.ttf");
-}
+@charset "UTF-8";
 .container
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  background-color: #e6e6e6;
-}
-body aside,
-body main,
-body section {
-  background-color: #fff;
-  font-family: "OpenSans";
-}
-body .AC-firstmain article {
-  padding-top: 10%;
-  margin-bottom: 7%;
-}
-body .AC-firstmain article h2 {
-  background-color: #e6027d;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 21pt;
-  position: absolute;
-  top: 5%;
-  left: -3%;
-  padding: 0.5% 2%;
-}
-body .AC-firstmain article h3 {
-  background-color: #ff991c;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 21pt;
-  position: absolute;
-  top: 0;
-  right: -3%;
-  padding: 0.5% 2%;
-}
-body .AC-main .AC-bnews {
-  position: relative;
-  height: 17vh;
-}
-body .AC-main .AC-bnews h3 {
-  background-color: #e6027d;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 21pt;
-  position: absolute;
-  top: 1%;
-  left: -3%;
-  padding: 0.5% 2%;
-}
-body .AC-main .AC-bnews p {
-  position: absolute;
-  top: 1%;
-  left: 20%;
-  font-family: "Futura";
-  font-size: 2em;
-}
-body .AC-main .AC-prog {
-  position: relative;
-}
-body .AC-main .AC-prog article {
-  margin-bottom: 7%;
-}
-body .AC-main .AC-prog article h3 {
-  background-color: #e6027d;
-  color: #fff;
-  font-family: "Futura";
-  font-size: 21pt;
-  position: absolute;
-  top: 0;
-  left: -3%;
-  padding: 0.5% 2%;
-}
-body .AC-main .AC-descrip h2 {
-  font-family: "Futura";
-  text-transform: uppercase;
-  margin-bottom: 1%;
-}
-body .AC-main .AC-descrip figure {
-  margin-bottom: 3%;
-}
-body .AC-main .AC-descrip figure p {
-  padding: 1% 0;
-  text-align: justify;
-  font-family: "OpenSans";
-  font-size: 10pt;
-}
-body .AC-rightzone .AC-income h3 {
-  margin-top: 1.7%;
-  margin-left: 40%;
-  font-family: "Futura";
-  font-size: 21pt;
-  width: 50%;
-  padding-left: 2%;
-  border-bottom: 2px solid #e6027d;
-  border-width: medium;
-}
-body .AC-rightzone .AC-income h4 {
-  font-family: "Futura";
-}
-body .AC-rightzone .AC-live a {
-  color: #e6027d;
-  text-decoration: none;
-}
-body .AC-rightzone .AC-replay h4 {
-  font-family: "Futura";
-  color: #e6027d;
-}
+  background-color: #000; }
+  body aside,
+  body main,
+  body section {
+    background-color: #fff;
+    font-family: "Open Sans"; }
+  body .AC-firstmain .AC-donation {
+    font-family: "Oswald";
+    font-size: 21pt;
+    padding: 0.5% 2%;
+    position: absolute;
+    top: 0;
+    background-color: #ff991c;
+    color: #fff;
+    right: -3%; }
+  body .AC-firstmain article {
+    padding-top: 10%;
+    margin-bottom: 3%;
+    /* Texte d├®filant */ }
+    body .AC-firstmain article h2 {
+      font-family: "Oswald";
+      font-size: 21pt;
+      padding: 0.5% 2%;
+      position: absolute;
+      top: 0;
+      background-color: #e6027d;
+      color: #fff;
+      top: 10%;
+      left: -3%;
+      z-index: 3; }
+    body .AC-firstmain article .AC-defileParent {
+      display: block;
+      margin: 3em auto;
+      overflow: hidden;
+      position: relative;
+      table-layout: fixed;
+      width: 100%;
+      margin-top: -3.4%;
+      z-index: 1; }
+    body .AC-firstmain article .AC-defile {
+      display: block;
+      -webkit-animation: linear appelAction 20s infinite;
+      -moz-animation: linear appelAction 20s infinite;
+      -o-animation: linear appelAction 20s infinite;
+      -ms-animation: linear appelAction 20s infinite;
+      animation: linear appelAction 20s infinite;
+      margin-left: -100%;
+      padding: 0 5px;
+      text-align: left;
+      height: 40px;
+      font-family: "Oswald";
+      font-size: 21pt; }
+    body .AC-firstmain article .AC-defile:after {
+      content: attr(data-text);
+      position: absolute;
+      white-space: nowrap;
+      padding-left: 10px; }
+@-webkit-keyframes appelAction {
+  0%,
+                100% {
+    margin-left: 0; }
+  99.99% {
+    margin-left: -100%; } }
+@-moz-keyframes appelAction {
+  0%,
+                100% {
+    margin-left: 0; }
+  99.99% {
+    margin-left: -100%; } }
+@-o-keyframes appelAction {
+  0%,
+                100% {
+    margin-left: 0; }
+  99.99% {
+    margin-left: -100%; } }
+@-ms-keyframes appelAction {
+  0%,
+                100% {
+    margin-left: 0; }
+  99.99% {
+    margin-left: -100%; } }
+@keyframes appelAction {
+  0%,
+                100% {
+    margin-left: 0; }
+  99.99% {
+    margin-left: -100%; } }
+  body .AC-firstmain .AC-live {
+    text-align: center; }
+    body .AC-firstmain .AC-live h3 {
+      font-family: "Oswald"; }
+    body .AC-firstmain .AC-live a {
+      font-weight: bolder;
+      color: #e6027d;
+      text-decoration: none; }
+  body .AC-main {
+    position: relative; }
+    body .AC-main .AC-bnews {
+      padding-right: 3%;
+      padding-bottom: 3%; }
+      body .AC-main .AC-bnews h3 {
+        font-family: "Oswald";
+        font-size: 21pt;
+        padding: 0.5% 2%;
+        position: absolute;
+        top: 0;
+        background-color: #e6027d;
+        color: #fff;
+        left: -4%; }
+      body .AC-main .AC-bnews p {
+        font-family: "Oswald";
+        font-size: 21pt;
+        margin-left: 25%; }
+    body .AC-main .AC-prog {
+      padding-right: 3%;
+      padding-bottom: 3%; }
+      body .AC-main .AC-prog h3 {
+        font-family: "Oswald";
+        font-size: 21pt;
+        padding: 0.5% 2%;
+        position: absolute;
+        top: 0;
+        background-color: #e6027d;
+        color: #fff;
+        left: -4%;
+        border: 1px solid red; }
+    body .AC-main .AC-prog-titre {
+      padding-right: 3%;
+      padding-bottom: 3%;
+      text-align: center;
+      margin-top: 5%; }
+    body .AC-main .AC-rightzone {
+      border-left: 1px solid black;
+      height: 33vh; }
+      body .AC-main .AC-rightzone .AC-discord-title {
+        margin-left: 5%;
+        padding-bottom: 2%;
+        width: 80%;
+        border-bottom: 1px solid black; }
+        body .AC-main .AC-rightzone .AC-discord-title h3 {
+          font-family: "Oswald";
+          font-size: 21pt;
+          color: #7289DA;
+          padding: 1.5%; }
 
 /*# sourceMappingURL=style.css.map */

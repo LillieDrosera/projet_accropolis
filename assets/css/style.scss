@@ -1,25 +1,15 @@
-// Font face //
-@font-face {
-    font-family: "Futura";
-    src: url('../font/futura_condensed.ttf');
-}
-@font-face {
-    font-family: "OpenSans";
-    src: url('../font/OpenSans-Regular.ttf');
-}
 // Couleurs utilisées //
 $action-color: #e6027d;
 $don-color: #ff991c;
 $bg-color: #e6e6e6;
 $bg-section: #fff;
-
+$discord-color:#7289DA;
 // Font utilisées //
-
-$font-title: "Futura";
-$font-body: "OpenSans";
+$font-title: 'Oswald';
+$font-body: 'Open Sans';
 $font-color: #fff;
-$font-size-title:21pt;
-$font-size-text:10pt;
+$font-size-title: 21pt;
+$font-size-text: 10pt;
 // Reclassement du container
 .container
 // CSS RESET
@@ -28,10 +18,22 @@ $font-size-text:10pt;
     padding: 0;
     box-sizing: border-box;
 }
+// DEBUG //
+@mixin debug() {
+    border:1px solid red;
+}
+// MIXIN
+@mixin titleRibbon() {
+    font-family: $font-title;
+    font-size: $font-size-title;
+    padding: 0.5% 2%;
+    position: absolute;
+    top:0;
+}
 // CSS Début
 
 body {
-    background-color: $bg-color;
+    background-color: #000;
 
     aside,
     main,
@@ -39,144 +41,200 @@ body {
         background-color: $bg-section;
         font-family: $font-body;
     }
-
     .AC-firstmain {
+        .AC-donation {
+            // Titre Je soutiens
+            @include titleRibbon();
+            background-color: $don-color;
+            color: $font-color;
+            right:-3%;
+            }
         article {
-            padding-top:10%;
-            margin-bottom: 7%;
+            padding-top: 10%;
+            margin-bottom: 3%;
+
             h2 {
                 // Titre Live ou Rediff
+                @include titleRibbon();
                 background-color: $action-color;
-                color:$font-color;
+                color: $font-color;
+                top:10%;
+                left:-3%;
+                z-index: 3;
+            }
+            /* Texte défilant */
+            .AC-defileParent {
+                display: block;
+                margin: 3em auto;
+                overflow: hidden;
+                position: relative;
+                table-layout: fixed;
+                width: 100%;
+                margin-top:-3.4%;
+                z-index: 1;
+            }
+            .AC-defile {
+                display: block;
+                -webkit-animation: linear appelAction 20s infinite;
+                -moz-animation: linear appelAction 20s infinite;
+                -o-animation: linear appelAction 20s infinite;
+                -ms-animation: linear appelAction 20s infinite;
+                animation: linear appelAction 20s infinite;
+                margin-left: -100%;
+                padding: 0 5px;
+                text-align: left;
+                height: 40px;
+
 
                 font-family: $font-title;
                 font-size: $font-size-title;
 
-
+            }
+            .AC-defile:after {
+                content: attr(data-text);
                 position: absolute;
-                top: 5%;
-                left: -3%;
-                padding: 0.5% 2%;
+                white-space: nowrap;
+                padding-left: 10px;
             }
+            @-webkit-keyframes appelAction {
+                0%,
+                100% {
+                    margin-left: 0;
+                }
 
-            h3 {
-                // Titre Je soutiens
-                background-color: $don-color;
-                color:$font-color;
-
-                font-family: $font-title;
-                font-size: $font-size-title;
-
-
-                position: absolute;
-                top: 0;
-                right: -3%;
-
-                padding:0.5% 2%;
-            }
-        }
-    }
-
-    .AC-main {
-        .AC-bnews {
-            position: relative;
-
-            height:17vh;
-            h3 {
-                // Breaking new title
-                background-color: $action-color;
-                color:$font-color;
-
-                font-family: $font-title;
-                font-size: $font-size-title;
-
-
-                position: absolute;
-                top: 1%;
-                left: -3%;
-
-                padding: 0.5% 2%;
-            }
-            p{
-                position:absolute;
-                top:1%;
-                left:20%;
-
-                font-family: $font-title;
-                font-size:2em;
-            }
-        }
-
-        .AC-prog {
-            position: relative;
-            article{
-                // height:5vh;
-                margin-bottom:7%;
-                 h3 {
-                        // Y'a quoi au programme ? titre
-                        background-color: $action-color;
-                        color:$font-color;
-                        font-family: $font-title;
-                        font-size: $font-size-title;
-
-
-                        position: absolute;
-                        top: 0;
-                        left: -3%;
-                        padding: 0.5% 2%;
-                    }
-            }
-        }
-        .AC-descrip{
-            h2{
-                font-family: $font-title;
-                text-transform: uppercase;
-                margin-bottom: 1%;
-            }
-            figure{
-                margin-bottom:3%;
-                p{
-                    padding:1% 0;
-                    text-align: justify;
-                    font-family: $font-body;
-                    font-size:$font-size-text;
+                99.99% {
+                    margin-left: -100%;
                 }
             }
+            @-moz-keyframes appelAction {
+                0%,
+                100% {
+                    margin-left: 0;
+                }
+
+                99.99% {
+                    margin-left: -100%;
+                }
+            }
+            @-o-keyframes appelAction {
+                0%,
+                100% {
+                    margin-left: 0;
+                }
+
+                99.99% {
+                    margin-left: -100%;
+                }
+            }
+            @-ms-keyframes appelAction {
+                0%,
+                100% {
+                    margin-left: 0;
+                }
+
+                99.99% {
+                    margin-left: -100%;
+                }
+            }
+            @keyframes appelAction {
+                0%,
+                100% {
+                    margin-left: 0;
+                }
+
+                99.99% {
+                    margin-left: -100%;
+                }
+            }
+            // @media only screen and (max-width: 860px) {
+            // .AC-defileParent {
+            // 	display: block;
+            // 	margin: 3em auto;
+            // 	overflow: hidden;
+            // 	position: relative;
+            // 	table-layout: fixed;
+            // 	width: 100%;
+            // }
+            //
+            // .AC-defile {
+            // 	display:block;
+            // 	-webkit-animation:linear appelAction 15s infinite ;
+            // 	-moz-animation:linear appelAction 15s infinite ;
+            // 	-o-animation:linear appelAction 15s infinite ;
+            // 	-ms-animation:linear appelAction 15s infinite ;
+            // 	animation:linear appelAction 15s infinite ;
+            // 	margin-left:-100%;
+            // 	padding:0 5px;
+            // 	text-align:left;
+            // 	height:25px;
+            // }
+            // }
+
+
+
         }
+        .AC-live {
+                text-align: center;
+                h3{
+                    font-family: $font-title;
+                }
+                a {
+                    font-weight:bolder;
+                    color: $action-color;
+                    text-decoration: none;
+                }
+            }
     }
-
-    .AC-rightzone {
-        .AC-income {
+    .AC-main {
+        position: relative;
+        .AC-bnews{
+            padding-right: 3%;
+            padding-bottom:3%;
             h3{
-                margin-top: 1.7%;
-                margin-left: 40%;
-
+                @include titleRibbon();
+                background-color: $action-color;
+                color: $font-color;
+                left:-4%;
+            }
+            p{
                 font-family:$font-title;
                 font-size:$font-size-title;
-
-                width: 50%;
-                padding-left:2%;
-
-
-                border-bottom: 2px solid $action-color;
-                border-width: medium;
-            }
-            h4 {
-                font-family: $font-title;
+                margin-left: 25%;
             }
         }
+        .AC-prog{
+            padding-right: 3%;
+            padding-bottom:3%;
 
-        .AC-live {
-            a {
-                color: $action-color;
-                text-decoration: none;
+            h3{
+                @include titleRibbon();
+                background-color: $action-color;
+                color: $font-color;
+                left:-4%;
+                @include debug();
             }
         }
+        .AC-prog-titre{
+            padding-right: 3%;
+            padding-bottom:3%;
+            text-align: center;
+            margin-top: 5%;
+        }
+        .AC-rightzone {
+            border-left:1px solid black;
+            height:33vh;
+            .AC-discord-title{
+                margin-left: 5%;
+                padding-bottom:2%;
+                width: 80%;
+                border-bottom:1px solid black;
+                h3{
+                    font-family: $font-title;
+                    font-size:$font-size-title;
+                    color:$discord-color;
 
-        .AC-replay {
-            h4 {
-                font-family: $font-title;
-                color: $action-color;
+                    padding:1.5%;
+                }
             }
         }
     }
