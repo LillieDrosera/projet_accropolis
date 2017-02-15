@@ -11,6 +11,7 @@ module.exports = function(grunt) {
              style: 'expanded'
           },
           files: {
+            /*'assets/css/style.css':'assets/src/stylesheets/bootstrap.scss',*/
             'assets/css/style.css': 'assets/css/*.scss',
           }
         }
@@ -24,6 +25,7 @@ module.exports = function(grunt) {
           livereload: true, // Activons le livereload du navigateur
         },
         src: {
+           /*files: 'assets/src/stylesheets/bootstrap/*.scss',*/
           files: ['assets/js/*.js', 'assets/css/*.css', '*.html'], // Les fichiers à observer…
           tasks: [], // … la tache à effectué NON UTILISE POUR l'INSTANT
         },
