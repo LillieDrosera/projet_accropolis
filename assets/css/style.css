@@ -2,6 +2,16 @@
 .container-fluid {
   padding: 0; }
 
+.pagination > li > a,
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  z-index: 3;
+  color: #e6027d;
+  background-color: white;
+  border: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -27,9 +37,24 @@ body {
       padding: 0.5% 2%;
       position: absolute;
       top: 0;
+      -webkit-transform: skew(-20deg);
+      -moz-transform: skew(-20deg);
+      -o-transform: skew(-20deg);
+      transform: skew(-20deg);
+      -moz-box-shadow: 4px 2px 5px 1px #656565;
+      -webkit-box-shadow: 4px 2px 5px 1px #656565;
+      -o-box-shadow: 4px 2px 5px 1px #656565;
+      box-shadow: 4px 2px 5px 1px #656565;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
+      font-family: "Oswald";
+      font-size: 21pt;
       background-color: #ff991c;
       color: #fff;
-      right: 0; }
+      right: -1%; }
+      body main .AC-firstmain .AC-donation a {
+        color: white;
+        font-family: "Oswald";
+        font-size: 21pt; }
     body main .AC-firstmain article {
       padding-top: 10%;
       margin-bottom: 3%;
@@ -40,10 +65,19 @@ body {
         padding: 0.5% 2%;
         position: absolute;
         top: 0;
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg);
+        -moz-box-shadow: 4px 2px 5px 1px #656565;
+        -webkit-box-shadow: 4px 2px 5px 1px #656565;
+        -o-box-shadow: 4px 2px 5px 1px #656565;
+        box-shadow: 4px 2px 5px 1px #656565;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
         background-color: #e6027d;
         color: #fff;
         top: 5%;
-        left: 0;
+        left: -1%;
         z-index: 3; }
       body main .AC-firstmain article .AC-defileParent {
         display: block;
@@ -106,11 +140,10 @@ body {
     body main .AC-firstmain .AC-live {
       text-align: center; }
       body main .AC-firstmain .AC-live h3 {
-        font-family: "Oswald"; }
-      body main .AC-firstmain .AC-live a {
-        font-weight: bolder;
-        color: #e6027d;
-        text-decoration: none; }
+        font-family: "Oswald";
+        color: #e6027d; }
+      body main .AC-firstmain .AC-live .AC-extend:hover {
+        fill: #e6027d; }
     body main .AC-main {
       position: relative; }
       body main .AC-main .AC-prognew {
@@ -125,9 +158,18 @@ body {
             padding: 0.5% 2%;
             position: absolute;
             top: 0;
+            -webkit-transform: skew(-20deg);
+            -moz-transform: skew(-20deg);
+            -o-transform: skew(-20deg);
+            transform: skew(-20deg);
+            -moz-box-shadow: 4px 2px 5px 1px #656565;
+            -webkit-box-shadow: 4px 2px 5px 1px #656565;
+            -o-box-shadow: 4px 2px 5px 1px #656565;
+            box-shadow: 4px 2px 5px 1px #656565;
+            filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
             background-color: #e6027d;
             color: #fff;
-            left: -2%;
+            left: -3%;
             z-index: 3; }
         body main .AC-main .AC-prognew .AC-defileParent {
           display: block;
@@ -166,6 +208,15 @@ body {
         padding: 0.5% 2%;
         position: absolute;
         top: 0;
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(-20deg);
+        -o-transform: skew(-20deg);
+        transform: skew(-20deg);
+        -moz-box-shadow: 4px 2px 5px 1px #656565;
+        -webkit-box-shadow: 4px 2px 5px 1px #656565;
+        -o-box-shadow: 4px 2px 5px 1px #656565;
+        box-shadow: 4px 2px 5px 1px #656565;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
         background-color: #e6027d;
         color: #fff;
         left: -2%; }
@@ -174,9 +225,11 @@ body {
       padding-bottom: 3%;
       text-align: center;
       margin-top: 5%; }
-      body main .AC-prog-titre h2 {
-        font-family: "Oswald";
-        font-size: 1.5em; }
+      body main .AC-prog-titre figure {
+        border-right: 1px solid black; }
+        body main .AC-prog-titre figure p {
+          font-family: "Oswald";
+          font-size: 1.5em; }
     body main .AC-left {
       height: 33vh; }
       body main .AC-left .AC-discord-title {
@@ -199,9 +252,18 @@ body {
       padding: 0.5% 2%;
       position: absolute;
       top: 0;
+      -webkit-transform: skew(-20deg);
+      -moz-transform: skew(-20deg);
+      -o-transform: skew(-20deg);
+      transform: skew(-20deg);
+      -moz-box-shadow: 4px 2px 5px 1px #656565;
+      -webkit-box-shadow: 4px 2px 5px 1px #656565;
+      -o-box-shadow: 4px 2px 5px 1px #656565;
+      box-shadow: 4px 2px 5px 1px #656565;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
       background-color: #e6027d;
       color: #fff;
-      left: 0; }
+      left: -1%; }
     body .AC-replay .AC-vidreplay {
       margin-top: 7%;
       text-align: center; }

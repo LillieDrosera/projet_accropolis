@@ -3,16 +3,28 @@ $action-color: #e6027d;
 $don-color: #ff991c;
 $bg-color: #e6e6e6;
 $bg-section: #fff;
-$discord-color: #7289DA; // Font utilisées //
+$discord-color: #7289DA;
+// Font utilisées //
 $font-title: 'Oswald';
 $font-body: 'Open Sans';
 $font-color: #fff;
 $font-size-title: 21pt;
-$font-size-text: 10pt; // Reclassement du container
-
+$font-size-text: 10pt;
+ // Reclassement
 .container-fluid {
     padding: 0;
 }
+.pagination > li > a,
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    z-index: 3;
+    color: $action-color;
+    background-color: white;
+    border: none;
+}
+
 // CSS RESET
 
 * {
@@ -31,6 +43,17 @@ $font-size-text: 10pt; // Reclassement du container
     padding: 0.5% 2%;
     position: absolute;
     top: 0;
+
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+
+    -moz-box-shadow: 4px 2px 5px 1px #656565;
+    -webkit-box-shadow: 4px 2px 5px 1px #656565;
+    -o-box-shadow: 4px 2px 5px 1px #656565;
+    box-shadow: 4px 2px 5px 1px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
 }
 // CSS Début
 a, a:hover, a:visited, a:focus, a:active{
@@ -38,7 +61,6 @@ a, a:hover, a:visited, a:focus, a:active{
     text-decoration: none;
     font-family: $font-body;
     font-weight: normal;
-
 }
 body {
     background-color: rgba(0,0,0,0.7);
@@ -55,9 +77,17 @@ body {
             .AC-donation {
                 // Titre Je soutiens
                 @include titleRibbon();
+                font-family: $font-title;
+                font-size: $font-size-title;
                 background-color: $don-color;
                 color: $font-color;
-                right: 0;
+                right: -1%;
+
+                    a{
+                        color:white;
+                        font-family: $font-title;
+                        font-size: $font-size-title;
+                    }
             }
 
             article {
@@ -70,7 +100,7 @@ body {
                     background-color: $action-color;
                     color: $font-color;
                     top: 5%;
-                    left: 0;
+                    left: -1%;
                     z-index: 3;
                 }
                 /* Texte défilant */
@@ -187,12 +217,13 @@ body {
 
                 h3 {
                     font-family: $font-title;
+                    color:$action-color;
                 }
 
-                a {
-                    font-weight: bolder;
-                    color: $action-color;
-                    text-decoration: none;
+                .AC-extend {
+                    }
+                .AC-extend:hover{
+                        fill:$action-color;
                 }
             }
         }
@@ -211,7 +242,7 @@ body {
                             @include titleRibbon();
                             background-color: $action-color;
                             color: $font-color;
-                            left: -2%;
+                            left: -3%;
                             z-index: 3;
                         }
                     }
@@ -271,9 +302,12 @@ body {
                 text-align: center;
                 margin-top: 5%;
 
-                h2 {
-                    font-family: $font-title;
-                    font-size: 1.5em;
+            figure{
+                border-right:1px solid black;
+                    p {
+                        font-family: $font-title;
+                        font-size: 1.5em;
+                    }
                 }
             }
 
@@ -305,7 +339,7 @@ body {
                 @include titleRibbon();
                 background-color: $action-color;
                 color: $font-color;
-                left: 0;
+                left: -1%;
             }
 
             .AC-vidreplay {
@@ -327,6 +361,7 @@ body {
             }
 
         }
+
     }
 
     .AC-Chat{
