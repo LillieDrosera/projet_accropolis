@@ -1,284 +1,58 @@
-@charset "UTF-8";
-.container-fluid {
-  padding: 0; }
+/*
+Error: Illegal nesting: Only properties may be nested beneath properties.
+        on line 402 of style.scss
 
-.pagination > li > a,
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover {
-  z-index: 3;
-  color: #e6027d;
-  background-color: white;
-  border: none; }
+397:     padding-top:1em;
+398:     background:$footer-color;
+399:     color:white;
+400:     font-family:
+401:     figure{
+402:         img{
+403:             width: 45%;
+404:         }
+405:     }
+406: }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-a, a:hover, a:visited, a:focus, a:active {
-  color: black;
-  text-decoration: none;
-  font-family: "Open Sans";
-  font-weight: normal; }
-
-body {
-  background-color: rgba(0, 0, 0, 0.7); }
-  body main {
-    background-color: #fff;
-    font-family: "Open Sans"; }
-    body main section {
-      background-color: #fff;
-      font-family: "Open Sans"; }
-    body main .AC-firstmain .AC-donation {
-      font-family: "Oswald";
-      font-size: 21pt;
-      padding: 0.5% 2%;
-      position: absolute;
-      top: 0;
-      -webkit-transform: skew(-20deg);
-      -moz-transform: skew(-20deg);
-      -o-transform: skew(-20deg);
-      transform: skew(-20deg);
-      -moz-box-shadow: 4px 2px 5px 1px #656565;
-      -webkit-box-shadow: 4px 2px 5px 1px #656565;
-      -o-box-shadow: 4px 2px 5px 1px #656565;
-      box-shadow: 4px 2px 5px 1px #656565;
-      filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
-      font-family: "Oswald";
-      font-size: 21pt;
-      background-color: #ff991c;
-      color: #fff;
-      right: -1%; }
-      body main .AC-firstmain .AC-donation a {
-        color: white;
-        font-family: "Oswald";
-        font-size: 21pt; }
-    body main .AC-firstmain article {
-      padding-top: 10%;
-      margin-bottom: 3%;
-      /* Texte d├®filant */ }
-      body main .AC-firstmain article h2 {
-        font-family: "Oswald";
-        font-size: 21pt;
-        padding: 0.5% 2%;
-        position: absolute;
-        top: 0;
-        -webkit-transform: skew(-20deg);
-        -moz-transform: skew(-20deg);
-        -o-transform: skew(-20deg);
-        transform: skew(-20deg);
-        -moz-box-shadow: 4px 2px 5px 1px #656565;
-        -webkit-box-shadow: 4px 2px 5px 1px #656565;
-        -o-box-shadow: 4px 2px 5px 1px #656565;
-        box-shadow: 4px 2px 5px 1px #656565;
-        filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
-        background-color: #e6027d;
-        color: #fff;
-        top: 5%;
-        left: -1%;
-        z-index: 3; }
-      body main .AC-firstmain article .AC-defileParent {
-        display: block;
-        margin: 3em auto;
-        overflow: hidden;
-        position: relative;
-        table-layout: fixed;
-        width: 100%;
-        margin-top: -5%;
-        margin-bottom: 4%;
-        z-index: 1; }
-      body main .AC-firstmain article .AC-defile {
-        display: block;
-        -webkit-animation: linear appelAction 20s infinite;
-        -moz-animation: linear appelAction 20s infinite;
-        -o-animation: linear appelAction 20s infinite;
-        -ms-animation: linear appelAction 20s infinite;
-        animation: linear appelAction 20s infinite;
-        margin-left: -100%;
-        padding: 0 5px;
-        text-align: left;
-        height: 40px;
-        font-family: "Oswald";
-        font-size: 21pt; }
-      body main .AC-firstmain article .AC-defile:after {
-        content: attr(data-text);
-        position: absolute;
-        white-space: nowrap;
-        padding-left: 10px; }
-@-webkit-keyframes appelAction {
-  0%,
-                    100% {
-    margin-left: 0; }
-  99.99% {
-    margin-left: -100%; } }
-@-moz-keyframes appelAction {
-  0%,
-                    100% {
-    margin-left: 0; }
-  99.99% {
-    margin-left: -100%; } }
-@-o-keyframes appelAction {
-  0%,
-                    100% {
-    margin-left: 0; }
-  99.99% {
-    margin-left: -100%; } }
-@-ms-keyframes appelAction {
-  0%,
-                    100% {
-    margin-left: 0; }
-  99.99% {
-    margin-left: -100%; } }
-@keyframes appelAction {
-  0%,
-                    100% {
-    margin-left: 0; }
-  99.99% {
-    margin-left: -100%; } }
-    body main .AC-firstmain .AC-live {
-      text-align: center; }
-      body main .AC-firstmain .AC-live h3 {
-        font-family: "Oswald";
-        color: #e6027d; }
-      body main .AC-firstmain .AC-live .AC-extend:hover {
-        fill: #e6027d; }
-    body main .AC-main {
-      position: relative; }
-      body main .AC-main .AC-prognew {
-        border-left: 1px solid black;
-        /* Texte d├®filant */ }
-        body main .AC-main .AC-prognew .AC-bnews {
-          padding-right: 3%;
-          padding-bottom: 3%; }
-          body main .AC-main .AC-prognew .AC-bnews h3 {
-            font-family: "Oswald";
-            font-size: 21pt;
-            padding: 0.5% 2%;
-            position: absolute;
-            top: 0;
-            -webkit-transform: skew(-20deg);
-            -moz-transform: skew(-20deg);
-            -o-transform: skew(-20deg);
-            transform: skew(-20deg);
-            -moz-box-shadow: 4px 2px 5px 1px #656565;
-            -webkit-box-shadow: 4px 2px 5px 1px #656565;
-            -o-box-shadow: 4px 2px 5px 1px #656565;
-            box-shadow: 4px 2px 5px 1px #656565;
-            filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
-            background-color: #e6027d;
-            color: #fff;
-            left: -3%;
-            z-index: 3; }
-        body main .AC-main .AC-prognew .AC-defileParent {
-          display: block;
-          margin: 3em auto;
-          overflow: hidden;
-          position: relative;
-          table-layout: fixed;
-          width: 100%;
-          margin-top: 8%;
-          margin-bottom: 0%;
-          z-index: 1; }
-        body main .AC-main .AC-prognew .AC-defile {
-          display: block;
-          -webkit-animation: linear appelAction 20s infinite;
-          -moz-animation: linear appelAction 20s infinite;
-          -o-animation: linear appelAction 20s infinite;
-          -ms-animation: linear appelAction 20s infinite;
-          animation: linear appelAction 20s infinite;
-          margin-left: -100%;
-          padding: 0 5px;
-          text-align: left;
-          height: 37px;
-          font-family: "Oswald";
-          font-size: 21pt; }
-        body main .AC-main .AC-prognew .AC-defile:after {
-          content: attr(data-text);
-          position: absolute;
-          white-space: nowrap;
-          padding-left: 10px; }
-    body main .AC-prog {
-      padding-right: 3%;
-      padding-bottom: 3%; }
-      body main .AC-prog h3 {
-        font-family: "Oswald";
-        font-size: 21pt;
-        padding: 0.5% 2%;
-        position: absolute;
-        top: 0;
-        -webkit-transform: skew(-20deg);
-        -moz-transform: skew(-20deg);
-        -o-transform: skew(-20deg);
-        transform: skew(-20deg);
-        -moz-box-shadow: 4px 2px 5px 1px #656565;
-        -webkit-box-shadow: 4px 2px 5px 1px #656565;
-        -o-box-shadow: 4px 2px 5px 1px #656565;
-        box-shadow: 4px 2px 5px 1px #656565;
-        filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
-        background-color: #e6027d;
-        color: #fff;
-        left: -2%; }
-    body main .AC-prog-titre {
-      padding-right: 3%;
-      padding-bottom: 3%;
-      text-align: center;
-      margin-top: 5%; }
-      body main .AC-prog-titre figure {
-        border-right: 1px solid black; }
-        body main .AC-prog-titre figure p {
-          font-family: "Oswald";
-          font-size: 1.5em; }
-    body main .AC-left {
-      height: 33vh; }
-      body main .AC-left .AC-discord-title {
-        margin-left: 5%;
-        padding-bottom: 2%;
-        width: 80%;
-        border-bottom: 1px solid black; }
-        body main .AC-left .AC-discord-title h3 {
-          font-family: "Oswald";
-          font-size: 21pt;
-          color: #7289DA;
-          padding: 1.5%; }
-  body .AC-replay {
-    position: relative;
-    margin-top: 3%;
-    background: #fff; }
-    body .AC-replay h2 {
-      font-family: "Oswald";
-      font-size: 21pt;
-      padding: 0.5% 2%;
-      position: absolute;
-      top: 0;
-      -webkit-transform: skew(-20deg);
-      -moz-transform: skew(-20deg);
-      -o-transform: skew(-20deg);
-      transform: skew(-20deg);
-      -moz-box-shadow: 4px 2px 5px 1px #656565;
-      -webkit-box-shadow: 4px 2px 5px 1px #656565;
-      -o-box-shadow: 4px 2px 5px 1px #656565;
-      box-shadow: 4px 2px 5px 1px #656565;
-      filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=116, Strength=5);
-      background-color: #e6027d;
-      color: #fff;
-      left: -1%; }
-    body .AC-replay .AC-vidreplay {
-      margin-top: 7%;
-      text-align: center; }
-      body .AC-replay .AC-vidreplay .AC-titre-replay {
-        color: #e6027d;
-        font-weight: bolder; }
-      body .AC-replay .AC-vidreplay .AC-date-replay {
-        font-weight: bolder; }
-    body .AC-replay .AC-pagination {
-      margin-top: 3%; }
-
-.AC-Chat {
-  position: fixed;
-  right: 0;
-  height: 100vh;
-  background: red; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:402
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:35:in `css_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 402 of style.scss\A \A 397:     padding-top:1em;\A 398:     background:$footer-color;\A 399:     color:white;\A 400:     font-family:\A 401:     figure{\A 402:         img{\A 403:             width: 45%;\A 404:         }\A 405:     }\A 406: }"; }

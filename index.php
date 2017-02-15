@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
+
+
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//localhost:35729/livereload.js"></script>
+    <!-- <script type="text/javascript" src="//localhost:35729/livereload.js"></script> -->
+    <script src="./assets/js/script.js" charset="utf-8"></script>
+
 
     <title>Accropolis | La chaîne de streaming citoyenne</title>
+
 </head>
 
-
+<?php include('template/header.html') ?>
 
 <body class="container-fluid">
     <main class="col-md-9">
@@ -53,7 +59,6 @@
                                 <polygon  class="AC-extend" fill="#666" points="17,18 23.777,9.222 15,16  "/>
                                 <polygon  class="AC-extend" fill="#fff" points="15,16 8.221,24.777 17,18  "/></g><g/><g/><g/><g/><g/><g/></svg>
                             </a>
-
                     </p>
 
                 </div>
@@ -157,6 +162,8 @@
     <aside class="AC-Chat col-md-3">
         Chat twitch
     </aside>
+    <?php include('template/footer.html') ?>
+
 </body>
 
 </html>
