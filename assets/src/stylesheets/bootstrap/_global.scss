@@ -1,0 +1,112 @@
+
+
+/*1 pixel = 20 vh for google Chrome and 1 pixel = 19 vh for firefox*/
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../font/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OswaldSemiBold";
+  src: url("../font/Oswald-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OswaldBold";
+  src: url("../font/Oswald-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0; }
+
+
+body {
+  background: #858585;
+  /*background:red;*/ }
+
+  /*header*/
+
+a, a:hover {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+header {
+  border-style: solid;
+  background: #858585;
+  border: none; }
+
+header figure {
+  border-style: solid;
+  background: #FFFFFF;
+  width: 100%; }
+
+header figure img {
+  width: 35%;
+  /*margin:0 auto;*/
+  margin-top: 2%;
+  margin-left: 32%;
+  margin-bottom: 2%; }
+
+header nav {
+  background: black;
+ }
+
+header nav ul {
+  margin: 0; }
+
+header nav li a {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-family:OpenSans;
+ }
+
+header nav li:hover {
+  background: #E5087E;
+  transition: 0.3s; }
+
+
+
+
+
+/*Main*/
+main {
+  height: 72vh; }
+
+/*Footer*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 6px;
+    padding-right: 15px;
+}
+
+footer {
+  padding-top: 4%;
+  background: #424242; }
+
+footer nav li a {
+  color: #FFFFFF;
+  font-size: 0.9em;
+  font-family:OpenSans;
+   }
+
+footer figure img {
+  width: 90%; }
+
+#mentionsLegales {
+  background: black; }
+
+  footer p {
+    margin-top:10px;
+    color: #FFFFFF;
+  }
+
+/*# sourceMappingURL=style.css.map */
+
+/*.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+background-color: #E5087E;
+}*/
+
