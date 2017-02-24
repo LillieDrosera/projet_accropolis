@@ -12,6 +12,18 @@
   background-color: white;
   border: none; }
 
+.col-md-9 {
+  padding: 0; }
+
+.row {
+  margin: 0; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background: #e6027d; }
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  background: #e6027d; }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,8 +35,14 @@ a, a:hover, a:visited, a:focus, a:active {
   font-family: "Open Sans";
   font-weight: normal; }
 
+header {
+  background-color: white; }
+  header figure img {
+    width: 40%; }
+
 body {
-  background-color: rgba(0, 0, 0, 0.7); }
+  margin-top: 8%;
+  background-color: rgba(255, 255, 255, 0.7); }
   body main {
     background-color: #fff;
     font-family: "Open Sans"; }
@@ -277,8 +295,17 @@ body {
 
 .AC-Chat {
   position: fixed;
+  top: 0;
   right: 0;
-  height: 100vh;
-  background: red; }
+  height: 200vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999 !important; }
+
+footer {
+  padding-top: 1em;
+  background: #424242;
+  color: white; }
+  footer figure img {
+    width: 45%; }
 
 /*# sourceMappingURL=style.css.map */

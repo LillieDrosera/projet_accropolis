@@ -3,6 +3,7 @@ $action-color: #e6027d;
 $don-color: #ff991c;
 $bg-color: #e6e6e6;
 $bg-section: #fff;
+$footer-color:#424242;
 $discord-color: #7289DA;
 // Font utilisées //
 $font-title: 'Oswald';
@@ -10,7 +11,7 @@ $font-body: 'Open Sans';
 $font-color: #fff;
 $font-size-title: 21pt;
 $font-size-text: 10pt;
- // Reclassement
+ // surclassement
 .container-fluid {
     padding: 0;
 }
@@ -24,7 +25,17 @@ $font-size-text: 10pt;
     background-color: white;
     border: none;
 }
-
+.col-md-9{
+    padding:0;
+}
+.row{
+    margin:0;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover
+   {background:$action-color;}
+.navbar-inverse .navbar-nav>li>a:hover{
+    background:$action-color;
+}
 // CSS RESET
 
 * {
@@ -62,8 +73,17 @@ a, a:hover, a:visited, a:focus, a:active{
     font-family: $font-body;
     font-weight: normal;
 }
+header{
+    background-color:white;
+    figure{
+        img{
+            width:40%;
+        }
+    }
+}
 body {
-    background-color: rgba(0,0,0,0.7);
+    margin-top:8%;
+    background-color: rgba(255,255,255,0.7);
 
     main{
         background-color: $bg-section;
@@ -74,6 +94,7 @@ body {
         }
 
         .AC-firstmain {
+
             .AC-donation {
                 // Titre Je soutiens
                 @include titleRibbon();
@@ -366,7 +387,20 @@ body {
 
     .AC-Chat{
         position:fixed;
+        top:0;
         right:0;
-        height:100vh;
-        background:red;
+        height:200vh;
+        background:rgba(0,0,0,0.7);
+        z-index: 9999 !important;
     }
+footer {
+    padding-top:1em;
+    background:$footer-color;
+    color:white;
+
+    figure{
+        img{
+            width: 45%;
+        }
+    }
+}
